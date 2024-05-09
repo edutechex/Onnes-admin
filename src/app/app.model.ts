@@ -45,7 +45,10 @@ export interface editTeam{
   imageFile : string
   designation : string
   about : string
-  link : string
+  link1: string
+  link2: string
+  link3: string
+  link4: string
 }
 
 export interface addTeam{
@@ -53,7 +56,10 @@ export interface addTeam{
   imageFile : string
   designation : string
   about : string
-  link : string
+  link1: string
+  link2: string
+  link3: string
+  link4: string
 }
 
 export interface editBlogNews{

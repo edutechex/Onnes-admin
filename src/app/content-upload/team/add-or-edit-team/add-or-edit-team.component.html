@@ -1,4 +1,4 @@
-<section class="mx-2 p-3 card bg-white rounded-0">
+<section class="mx-2 p-3  bg-white rounded-0" style="height: 100vh;">
     <div class="ms-3 d-flex justify-content-between align-items-center">
         <h2 class="ps-3" *ngIf="datas">Edit Team Item</h2>
         <h2 class="ps-3" *ngIf="!datas">Add Team Item</h2>
@@ -36,10 +36,31 @@
             </div>
 
             <div class="col-lg-6 row">
-                <mat-label class="col-12 pb-3 fs-4">Link :</mat-label>
+                <mat-label class="col-12 pb-3 fs-4">Link1 :</mat-label>
                 <mat-form-field appearance="outline" class="col-8">
-                    <mat-label>Link</mat-label>
-                    <input matInput type="text" placeholder="Enter Link" formControlName="link">
+                    <mat-label>Link1</mat-label>
+                    <input matInput type="text" placeholder="Enter Link1" formControlName="link1">
+                </mat-form-field>
+            </div>
+            <div class="col-lg-6 row">
+                <mat-label class="col-12 pb-3 fs-4">Link2 :</mat-label>
+                <mat-form-field appearance="outline" class="col-8">
+                    <mat-label>Link2</mat-label>
+                    <input matInput type="text" placeholder="Enter Link2" formControlName="link2">
+                </mat-form-field>
+            </div>
+            <div class="col-lg-6 row">
+                <mat-label class="col-12 pb-3 fs-4">Link3 :</mat-label>
+                <mat-form-field appearance="outline" class="col-8">
+                    <mat-label>Link3</mat-label>
+                    <input matInput type="text" placeholder="Enter Link3" formControlName="link3">
+                </mat-form-field>
+            </div>
+            <div class="col-lg-6 row">
+                <mat-label class="col-12 pb-3 fs-4">Link4 :</mat-label>
+                <mat-form-field appearance="outline" class="col-8">
+                    <mat-label>Link4</mat-label>
+                    <input matInput type="text" placeholder="Enter Link4" formControlName="link4">
                 </mat-form-field>
             </div>
         </div>

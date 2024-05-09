@@ -12,6 +12,7 @@ import { MatTableDataSource } from '@angular/material/table';
 export class VisitorsComponent implements OnInit{
 
   visitorDataSource: any;
+  visitorsData: any;
 
   public displayedColumns = [
     'id',
@@ -20,7 +21,7 @@ export class VisitorsComponent implements OnInit{
     'region',
     'postal',
     'country',
-    // 'createdOn',
+    'createdOn',
   ];
   @ViewChild(MatSort) sort = new MatSort();
   @ViewChild(MatPaginator) paginator = new MatPaginator(
@@ -38,7 +39,8 @@ ngOnInit(): void {
 }
   getVisitorDatails(){
     this.appSrvc.getVisitorsData().subscribe((res:any)=>{
-      this.visitorDataSource = new MatTableDataSource(res);
+      this.visitorsData = res.reverse();
+      this.visitorDataSource = new MatTableDataSource(this.visitorsData);
       this.visitorDataSource.paginator = this.paginator;
       this.visitorDataSource.sort = this.sort;
     })

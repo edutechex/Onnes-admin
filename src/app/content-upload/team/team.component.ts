@@ -34,6 +34,9 @@ export class TeamComponent implements OnInit{
     'desg',
     'about',
     'link',
+    'link2',
+    'link3',
+    'link4',
     'edit/delete',
   ];
   allTeamList: any;
