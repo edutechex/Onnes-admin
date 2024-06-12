@@ -21,6 +21,8 @@ export class VisitorsComponent implements OnInit{
     'region',
     'postal',
     'country',
+    // 'latitude',
+    // 'longitude',
     'createdOn',
   ];
   @ViewChild(MatSort) sort = new MatSort();

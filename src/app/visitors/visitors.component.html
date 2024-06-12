@@ -63,6 +63,14 @@
         <mat-header-cell *matHeaderCellDef mat-sort-header> Country </mat-header-cell>
         <mat-cell *matCellDef="let element"> {{element.country}} </mat-cell>
       </ng-container>
+      <!-- <ng-container matColumnDef="latitude">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Latitude </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.latitude}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="longitude">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Longitude </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.longitude}} </mat-cell>
+      </ng-container> -->
       <ng-container matColumnDef="createdOn">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Created On </mat-header-cell>
         <mat-cell *matCellDef="let element"> {{element.date | date:'medium'}} </mat-cell>
