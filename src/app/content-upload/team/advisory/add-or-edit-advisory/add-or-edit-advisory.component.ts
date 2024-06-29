@@ -9,7 +9,7 @@ import { AppService } from 'src/app/app.service';
   templateUrl: './add-or-edit-advisory.component.html',
   styleUrls: ['./add-or-edit-advisory.component.css']
 })
-export class AddOrEditAdvisoryComponent implements OnInit{
+export class AddOrEditAdvisoryComponent implements OnInit{  
   addEditAdvisoryItemForm : any = FormGroup;
   success : boolean = false;
   err : boolean = false;

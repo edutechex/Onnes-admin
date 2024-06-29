@@ -274,7 +274,7 @@ export class AppService {
     return this.http.delete(`${this.baseUrl}/Partner/${id}`);
   }
 
-  // add partner
+  // add Investor
   addInvestor(Investor: addInvestor){
     return this.http.post(`${this.baseUrl}/Investors`,Investor);
   }
